@@ -28,7 +28,7 @@ const streamPricesController = (req, res) => {
       }));
       //Thực hiện cập nhật vào cơ sở dữ liệu
       const result = await UsdtPair.bulkWrite(updatePrices);
-      
+    
 
       //Kiểm tra xem có bản ghi nào được cập nhật không
       if (result.modifiedCount > 0 || result.upsertedCount > 0) {
@@ -36,7 +36,8 @@ const streamPricesController = (req, res) => {
       }
 
       if (!res.headersSent) {
-        res.json({ message: 'Dữ liệu đã được cập nhật hoặc thêm mới', updatePrices });
+        res.json({ message: 'Dữ liệu đã được cập nhật hoặc thêm mới' ,data:updatePrices});
+
       }
     } catch (error) {
       console.error('Lỗi khi xử lý dữ liệu:', error.message);
