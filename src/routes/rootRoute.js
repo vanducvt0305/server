@@ -5,3 +5,10 @@ const { getPriceRoute } = require("./getPriceRoute");
 rootRoute.use("/", getPriceRoute);
 
 module.exports = rootRoute;
+
+
+
+
+
+
+
