@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "express": "^4.18.3",
+    "nodemon": "^3.1.0"
+  },
+  "name": "Server",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Server NodeJS",
+  "main": "src/server.js",
+  "author": "ducsakun <vanducvt0305@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "start": "nodemon src/server.js"
+  }
+}
